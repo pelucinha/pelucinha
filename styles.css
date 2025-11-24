@@ -1,1 +1,68 @@
-body{}
+body {
+  font-family: 'Inter', sans-serif;
+  background: #fafafa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+header {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+h1 {
+  margin: 0;
+  font-size: 26px;
+  color: #444;
+}
+#produtos {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+.card {
+  background: white;
+  padding: 0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.card .info {
+  padding: 15px;
+}
+.card h3 {
+  margin: 0 0 10px 0;
+}
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  background: #25D366;
+  color: white;
+  width: 100%;
+  margin-top: 10px;
+}
+#carrinho {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  padding: 15px;
+  box-shadow: 0 -3px 8px rgba(0,0,0,0.12);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
